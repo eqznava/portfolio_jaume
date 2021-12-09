@@ -1,5 +1,6 @@
 :root {
     --primary: #310a90;
+    --backgroundIcon: #72edf2;
     --gradient1: linear-gradient(45deg, #fad7a1 0%, #e96d71 100%);
     --white: #ffffff;
     --gradient2: linear-gradient(45deg, #72edf2 0%, #5151e5 100%);
@@ -26,7 +27,7 @@ body {
 header {
     display: flex;
     justify-content: space-between;
-    width: 90%;
+    width: 80%;
     margin: 0px auto;
     margin-top: 25px;
 }
@@ -38,7 +39,7 @@ header h3 {
 }
 
 .navbar {
-    width: 25%;
+    width: 33%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -81,4 +82,63 @@ button {
     border-radius: 5px;
     border: none;
     cursor: pointer;
+}
+
+.avatar {
+    width: 80%;
+    margin: 0px auto;
+    margin-top: 50px;
+    margin-bottom: 100px;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+}
+
+.avatarImg {
+    width: 40%;
+    display: contents;
+    border: 1px solid black;
+}
+
+.avatarImg>img {
+    height: 450px;
+    border-radius: 15px;
+}
+
+.avatarInfo {
+    width: 40%;
+    color: var(--primary);
+}
+
+.iconsContainer {
+    width: 100%;
+    display: flex;
+    gap: 10px;
+}
+
+.iconBox {
+    border: 2px solid var(--primary);
+    background-color: var(--white);
+    border-radius: 5px;
+    display: flex;
+}
+
+.iconBox img {
+    padding: 10px;
+}
+
+.avatarInfo>h2 {
+    font: var(--headline5);
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.avatarInfo>h1 {
+    font: var(--headline2);
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.avatarInfo p {
+    font: var(--body1);
 }
