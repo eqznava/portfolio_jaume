@@ -1,14 +1,14 @@
 :root {
     --primary: #310a90;
-    --backgroundIcon: #72edf2;
-    --gradient1: linear-gradient(45deg, #fad7a1 0%, #e96d71 100%);
     --white: #ffffff;
+    --gradient1: linear-gradient(45deg, #fad7a1 0%, #e96d71 100%);
     --gradient2: linear-gradient(45deg, #72edf2 0%, #5151e5 100%);
     --headline1: 700 5.9375rem/9.6068754196167rem Poppins;
     --headline2: 700 3.6875rem/5.96637487411499rem Poppins;
     --headline3: 700 3rem/4.854000091552734rem Poppins;
     --headline4: 700 2.125rem/3.4382500648498535rem Poppins;
     --headline5: 700 1.5rem/2.427000045776367rem Poppins;
+    --headline6: 100 1.5rem/2.427000045776367rem Poppins;
     --body1: 400 1rem/1.6180000305175781rem Poppins;
     --body2: 700 1rem/1.6180000305175781rem Poppins;
     --body3: 400 0.875rem/1.4157500267028809rem Poppins;
@@ -20,6 +20,7 @@ body {
     color: var(--white);
     background-image: var(--gradient2);
     background-repeat: no-repeat;
+    background-attachment: fixed;
     font: var(--headline2);
     margin: 0px;
 }
@@ -88,7 +89,7 @@ button {
     width: 80%;
     margin: 0px auto;
     margin-top: 50px;
-    margin-bottom: 100px;
+    margin-bottom: 200px;
     display: flex;
     flex-direction: row-reverse;
     justify-content: space-between;
@@ -141,4 +142,149 @@ button {
 
 .avatarInfo p {
     font: var(--body1);
+}
+
+.main {
+    width: 80%;
+    margin: 0px auto;
+    margin-top: 100px;
+}
+
+.article {
+    text-align: center;
+    color: var(--primary);
+    margin-bottom: 100px;
+}
+
+.articleP1 {
+    font: var(--headline6);
+}
+
+.articleP2 {
+    font: var(--body2);
+    letter-spacing: 1px;
+}
+
+.article>img {
+    width: 50px;
+}
+
+.projectOne,
+.projectTwo,
+.projectThree {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    margin-top: 150px;
+    margin-bottom: 150px;
+}
+
+.projectTwo {
+    flex-direction: row;
+}
+
+.projectThree {
+    justify-content: center;
+    gap: 100px;
+}
+
+.imgContainer,
+.imgContainerTwo,
+.imgContainerThree {
+    display: flex;
+    justify-content: end;
+}
+
+.imgContainerTwo {
+    justify-content: start;
+}
+
+.imgContainerThree {
+    justify-content: center;
+}
+
+.imgContainer>img,
+.imgContainerTwo>img,
+.imgContainerThree>img {
+    width: 90%;
+}
+
+.buttonInfo {
+    width: fit-content;
+    font: var(--headline4);
+    border-radius: 0px;
+    box-shadow: -1px 1px 0px white, -2px 2px 0px white, -3px 3px 0px white, -4px 4px 0px white;
+}
+
+.projectInfoTwo,
+.projectInfoThree {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    gap: 10px;
+}
+
+.projectInfo>p,
+.projectInfoThree>p {
+    color: var(--primary);
+    font: var(--body1);
+}
+
+.projectInfoTwo>p {
+    color: var(--primary);
+    font: var(--body3);
+}
+
+.buttonContainer {
+    display: flex;
+    gap: 15px;
+}
+
+.buttonProject,
+.buttonCode {
+    width: fit-content;
+    padding-left: 15px;
+    padding-right: 15px;
+    border: 2px solid var(--primary);
+    transition: all 300ms ease;
+}
+
+.buttonCode {
+    color: var(--primary);
+    background-color: transparent;
+}
+
+.buttonProject:hover {
+    background-color: transparent;
+    color: var(--primary);
+}
+
+.buttonCode:hover {
+    background-color: var(--primary);
+    color: var(--white);
+}
+
+.testimonialCard {
+    background-color: #65b0ed;
+    border-radius: 20px;
+    border-top: 3px solid white;
+    border-left: 3px solid white;
+    margin-bottom: 150px;
+    color: var(--primary);
+    text-align: center;
+    padding: 60px;
+}
+
+.cardImgContainer>img {
+    border-radius: 50%;
+}
+
+.cardReview {
+    font: var(--headline6);
+}
+
+.whoReviews {
+    font: var(--body2);
+    opacity: 0.5;
 }
