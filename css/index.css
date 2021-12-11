@@ -33,10 +33,17 @@ header {
     margin-top: 25px;
 }
 
-header h3 {
+header h3,
+footer h3 {
     font: var(--headline5);
     color: var(--primary);
     margin: 0px;
+}
+
+footer h3 {
+    color: var(--white);
+    display: flex;
+    align-items: center;
 }
 
 .navbar {
@@ -209,11 +216,14 @@ button {
     width: 90%;
 }
 
-.buttonInfo {
+.titleInfo {
     width: fit-content;
     font: var(--headline4);
     border-radius: 0px;
     box-shadow: -1px 1px 0px white, -2px 2px 0px white, -3px 3px 0px white, -4px 4px 0px white;
+    background-color: var(--primary);
+    padding-left: 5px;
+    padding-right: 5px;
 }
 
 .projectInfoTwo,
@@ -287,4 +297,125 @@ button {
 .whoReviews {
     font: var(--body2);
     opacity: 0.5;
+}
+
+.contact {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0px auto;
+    margin-bottom: 100px;
+}
+
+.titleContact {
+    width: 90%;
+    font: var(--headline4);
+    border-radius: 0px;
+    box-shadow: -1px 1px 0px white, -2px 2px 0px white, -3px 3px 0px white, -4px 4px 0px white;
+    background-color: var(--primary);
+    text-align: center;
+    margin-bottom: 0px;
+}
+
+.contactNote {
+    font: var(--caption);
+    text-align: center;
+}
+
+form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+}
+
+form label {
+    font: var(--body2);
+    color: var(--primary);
+    text-align: left;
+    width: 90%;
+}
+
+input[type="text"],
+input[type="email"] {
+    width: 95%;
+    height: 30px;
+    border-radius: 5px;
+    padding-left: 5px;
+    border: none;
+}
+
+textarea {
+    width: 95%;
+    border-radius: 5px;
+    padding: 5px;
+    border: none;
+    resize: none;
+}
+
+input[type="button"] {
+    width: 95%;
+    height: 35px;
+    background-color: var(--primary);
+    color: var(--white);
+    font: var(--button);
+    border-radius: 5px;
+    border-style: none;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+footer {
+    width: 80%;
+    margin: 0px auto;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footerInfo {
+    width: 80%;
+    display: flex;
+    align-items: center;
+    gap: 45px;
+}
+
+.textFooter {
+    font: var(--body1);
+    width: 65%;
+}
+
+.iconsContainerFooter {
+    width: 30%;
+    display: flex;
+    gap: 10px;
+}
+
+@media screen and (max-width:1350px) {
+    .footerInfo {
+        width: 85%;
+    }
+}
+
+@media screen and (max-width:1270px) {
+    .textFooter {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width:1215px) {
+    .textFooter {
+        font: var(--body3);
+    }
+}
+
+@media screen and (max-width:1115px) {
+    button {
+        width: 20%;
+    }
+    .textFooter {
+        text-align: center;
+    }
 }
