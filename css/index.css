@@ -103,13 +103,11 @@ button {
 }
 
 .avatarImg {
-    width: 40%;
     display: contents;
     border: 1px solid black;
 }
 
 .avatarImg>img {
-    height: 450px;
     border-radius: 15px;
 }
 
@@ -133,6 +131,11 @@ button {
 
 .iconBox img {
     padding: 10px;
+}
+
+.curriculum {
+    display: none;
+    width: fit-content;
 }
 
 .avatarInfo>h2 {
@@ -388,7 +391,7 @@ footer {
 }
 
 .iconsContainerFooter {
-    width: 30%;
+    width: 35%;
     display: flex;
     gap: 10px;
 }
@@ -400,22 +403,130 @@ footer {
 }
 
 @media screen and (max-width:1270px) {
+    .avatarImg>img {
+        width: 50%;
+    }
     .textFooter {
         width: 80%;
     }
 }
 
 @media screen and (max-width:1215px) {
+    .avatarInfo {
+        width: 45%;
+    }
     .textFooter {
         font: var(--body3);
     }
 }
 
 @media screen and (max-width:1115px) {
+    .avatar {
+        margin-bottom: 150px;
+    }
+    .avatarImg>img {
+        width: 47%;
+    }
     button {
         width: 20%;
     }
     .textFooter {
         text-align: center;
+    }
+}
+
+@media screen and (max-width:1024px) {
+    .avatarInfo {
+        width: 50%;
+    }
+    .navbar {
+        width: 40%;
+    }
+}
+
+@media screen and (max-width:900px) {
+    .navbar {
+        width: 45%;
+    }
+    .avatarInfo>p {
+        width: 70%;
+    }
+}
+
+@media screen and (max-width:800px) {
+    .navbar {
+        width: 50%;
+    }
+}
+
+@media screen and (max-width:768px) {
+    br {
+        display: none;
+    }
+    button {
+        display: none;
+    }
+    header,
+    .avatar,
+    .main,
+    footer {
+        width: 85%;
+    }
+    .titleInfo {
+        font: var(--headline5);
+    }
+    .avatarInfo>h1 {
+        font: var(--headline3);
+    }
+    .projectInfo>p {
+        font: var(--body3);
+    }
+    .projectThree {
+        gap: 70px;
+    }
+    .contact {
+        width: 75%;
+    }
+    footer h3 {
+        display: none;
+    }
+}
+
+@media screen and (max-width:670px) {
+    .curriculum {
+        display: block;
+    }
+    .avatar {
+        flex-direction: column;
+        align-items: center;
+    }
+    .avatarImg>img {
+        width: 60%;
+    }
+    .avatarInfo {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .avatarInfo>p {
+        text-align: center;
+    }
+    .iconsContainer {
+        justify-content: center;
+    }
+    .testimonialCard {
+        padding: 15px;
+    }
+    .contact {
+        margin-bottom: 30px;
+    }
+    .footerInfo {
+        width: 100%;
+        flex-direction: column;
+        gap: 15px;
+    }
+    .iconsContainerFooter {
+        width: 40%;
     }
 }
